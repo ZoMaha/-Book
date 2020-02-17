@@ -164,7 +164,7 @@ namespace SubstancesReferenceBook.Controllers
                 }
                 );
                
-                data[data.Count - 1].PropUnits = "Нанометры";
+                data[data.Count - 1].PropUnits = "Bpvty";
                 data[data.Count - 1].Upd(data[data.Count - 1].Name, data[data.Count - 1].Descr, data[data.Count - 1].PropUnits, data[data.Count - 1].Type);
                 
 

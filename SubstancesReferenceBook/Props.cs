@@ -24,7 +24,9 @@ namespace SubstancesReferenceBook
 
             /*По идее на вход данные для обновления: ID, и что обновлять*/
             string queryTable1 = "UPDATE [dbo].[Properties] SET Name = '" + nameUpd + "', Descr = '" + descrUpd + "', PropUnits = '" + propUnitsUpd + "', ValueType = " + typeUpd + " WHERE ID =" + Id;
+            
             SqlCommand command1 = new SqlCommand(queryTable1, sqlConnection1);
+            command1.ExecuteNonQuery();
         }
 
     }
